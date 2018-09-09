@@ -11,7 +11,8 @@ function splitName(driver) {
     return fullName;
 }
 
+
 function nameToAttributes (drivers) {
-    const newDrivers = drivers.map(driver => Object.assigin({}, {firstName: splitName(driver)[0]), lastName: splitName(driver)[1]})
-    return newDrivers
+    const newDrivers = drivers.map(driver => Object.assign({}, {firstName: splitName(driver)[0], lastName: splitName(driver)[1]}));
+    return newDrivers;
 }
