@@ -16,3 +16,8 @@ function nameToAttributes (drivers) {
     const newDrivers = drivers.map(driver => Object.assign({}, {firstName: splitName(driver)[0], lastName: splitName(driver)[1]}));
     return newDrivers;
 }
+
+
+function attributesToPhrase (drivers) {
+    const fromWhereArray = drivers.map( driver => `${driver.name} is from ${driver.hometown}`)
+}
