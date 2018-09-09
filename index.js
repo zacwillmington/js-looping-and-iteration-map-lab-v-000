@@ -19,5 +19,6 @@ function nameToAttributes (drivers) {
 
 
 function attributesToPhrase (drivers) {
-    const fromWhereArray = drivers.map( driver => `${driver.name} is from ${driver.hometown}`)
+    const fromWhereArray = drivers.map( driver => `${driver.name} is from ${driver.hometown}`);
+    return fromWhereArray;
 }
