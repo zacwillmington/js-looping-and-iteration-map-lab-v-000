@@ -5,13 +5,12 @@ function lowerCaseDrivers (drivers) {
     return reformattedNames;
 }
 
-function nameToAttributes (drivers) {
-const newDrivers = drivers.map(driver => Object.assigin({}, {firstName: splitName(driver)[0]), lastName: splitName(driver)[1]})
-    return newDrivers
-}
-
 
 function splitName(nameStr) {
     let fullName = driver.split(" ");
     return fullName;
+}
+function nameToAttributes (drivers) {
+    const newDrivers = drivers.map(driver => Object.assigin({}, {firstName: splitName(driver)[0]), lastName: splitName(driver)[1]})
+    return newDrivers
 }
